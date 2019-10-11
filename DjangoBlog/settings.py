@@ -194,8 +194,19 @@ BAIDU_NOTIFY_URL = "http://data.zz.baidu.com/urls?site=https://www.lylinux.net&t
 # Emial:
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 
-# EMAIL_USE_TLS = True
-EMAIL_USE_SSL = True
+EMAIL_USE_TLS = True
+# EMAIL_USE_SSL = True
+'''
+ 默认值：False
+
+    在与SMTP服务器通信时是否使用隐式TLS（安全）连接。在大多数电子邮件文档中，此类型的TLS连接称为SSL。它通常在端口465上使用。如果您遇到问题，请参阅显式TLS设置EMAIL_USE_TLS。请注意，EMAIL_USE_TLS / EMAIL_USE_SSL是互斥的，因此只能将其中一个设置设置为True。一般端口默认为25
+
+EMAIL_USE_TLS¶
+默认值：False
+
+是否使用TLS(安全)当与SMTP服务器的连接。这是用于显式TLS连接,通常在端口587上。如果你正在经历挂连接,看到隐EMAIL_USE_SSL TLS设置。这用于显式TLS连接，通常在端口587上。如果您遇到挂起的连接，请参阅隐式TLS设置EMAIL_USE_SSL。
+
+'''
 
 EMAIL_HOST = 'smtp.163.com'
 EMAIL_PORT = 25
