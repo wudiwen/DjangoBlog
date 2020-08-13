@@ -207,11 +207,10 @@ EMAIL_USE_TLS¶
 是否使用TLS(安全)当与SMTP服务器的连接。这是用于显式TLS连接,通常在端口587上。如果你正在经历挂连接,看到隐EMAIL_USE_SSL TLS设置。这用于显式TLS连接，通常在端口587上。如果您遇到挂起的连接，请参阅隐式TLS设置EMAIL_USE_SSL。
 
 '''
-
 EMAIL_HOST = 'smtp.163.com'
 EMAIL_PORT = 25
 EMAIL_HOST_USER = '15631184525@163.com'
-EMAIL_HOST_PASSWORD = '961008ptwdw'    # smtp授权密码，不是邮箱密码
+EMAIL_HOST_PASSWORD = 'XZEDRZZNDPZHZQVJ'    # smtp授权密码，不是邮箱密码
 DEFAULT_FROM_EMAIL = EMAIL_HOST_USER
 SERVER_EMAIL = EMAIL_HOST_USER
 # Setting debug=false did NOT handle except email notifications
